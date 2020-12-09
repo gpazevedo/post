@@ -11,6 +11,7 @@ const { httpAdapter } = require('./httpAdapter')
 const api = express()
 
 api.use(express.json());
+api.use(express.urlencoded());
 
 // CORS
 api.use(cors())
